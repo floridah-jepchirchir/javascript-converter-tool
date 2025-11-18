@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Conversion Tools</h1>
+        <nav>
+            <button onclick="showTool('temperature')">Temperature</button>
+            <button onclick="showTool('currency')">Currency</button>
+            <button onclick="showTool('custom')">Custom</button>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="temperature" class="tool">
+            <h2>Temperature Converter</h2>
+            <input type="number" id="tempInput" placeholder="Enter temperature">
+            <select id="tempUnit">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+            <button onclick="convertTemperature()">Convert</button>
+            <p id="tempResult"></p>
+        </section>
+        <div id="CurrencyOptions">
+            <img src="image EURO currency.jpeg" onclick="SetCurrency(USD)"ALT
+    </div><
+        <section id="currency" class="tool">
+            <h2>Currency Converter</h2>
+            <input type="number" id="currencyInput" placeholder="Enter amount">
+        </div>
+            <select id="currencyFrom">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+            </select>
+            <select id="currencyTo">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+            </select>
+            <button onclick="convertCurrency()">Convert</button>
+            <p id="currencyResult"></p>
+        </section>
+        
+        <section id="custom" class="tool">
+            <h2>Speed Converter</h2>
+            <input type="number" id="speedInput" placeholder="Enter speed">
+            <select id="speedUnit">
+                <option value="kph">Kilometers per hour</option>
+                <option value="mph">Miles per hour</option>
+            </select>
+            <button onclick="convertSpeed()">Convert</button>
+            <p id="speedResult"></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>FLORIDAH JEPCHIRCHIR - 3166739</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
